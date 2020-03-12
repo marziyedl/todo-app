@@ -7,7 +7,7 @@ import { TodoItems } from '../../models/todo-items.model';
   styleUrls: ['./add-to-list.component.scss']
 })
 export class AddToListComponent implements OnInit {
-  @Input() todoList: Array<TodoItems> = new Array<TodoItems>();
+  @Input() todoList: Array<TodoItems>;
   @Output() todoListChange: EventEmitter<Array<TodoItems>> = new EventEmitter<Array<TodoItems>>();
   itemOfList: string
   constructor() { }
