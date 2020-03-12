@@ -7,7 +7,7 @@ import { TodoItems } from '../../models/todo-items.model';
   styleUrls: ['./todo-items.component.scss']
 })
 export class TodoItemsComponent {
-  @Input() todoArray: Array<TodoItems> = new Array<TodoItems>();
+  @Input() todoArray: Array<TodoItems> ;
 
   constructor() {
     this.todoArray = new Array<TodoItems>();
