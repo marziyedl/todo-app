@@ -7,7 +7,7 @@ import { TodoItems } from '../models/todo-items.model';
   styleUrls: ['./todo-list-manager.component.scss']
 })
 export class TodoListManagerComponent implements OnInit {
-  public todoList : Array<TodoItems> = new Array<TodoItems>();
+  public ListOfTodo : Array<TodoItems> = new Array<TodoItems>();
   constructor() { }
 
   ngOnInit() {
