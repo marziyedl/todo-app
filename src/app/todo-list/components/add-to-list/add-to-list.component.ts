@@ -10,10 +10,11 @@ export class AddToListComponent implements OnInit {
   @Input() todoList: Array<TodoItems>;
   @Output() todoListChange: EventEmitter<Array<TodoItems>> = new EventEmitter<Array<TodoItems>>();
   itemOfList: string
-  constructor() { }
+  constructor() { 
+      this.todoList = new Array<TodoItems>();
+}
 
   ngOnInit() {
-    this.todoList = new Array<TodoItems>();
   }
 
   addToList(item: string) {
