@@ -1,0 +1,22 @@
+input[type=checkbox] {
+    display: none;
+
+    +label:before {
+        font-family   : FontAwesome;
+        display       : inline-block;
+        content       : "\f096";
+        letter-spacing: 10px;
+        font-size: 1em;
+
+    }
+
+    &:checked+label:before {
+        content       : "\f046";
+        color         : green;
+        letter-spacing: 5px;
+    }
+}
+
+.trash--color {
+    color: red
+}

@@ -1,0 +1,13 @@
+<ul class="list-group mt-2">
+  <li class="list-group-item" *ngFor="let item of todoArray;let i=index">
+    <div class="d-flex">
+      <div>
+        <input id="list-check-{{i}}" type="checkbox" [(ngModel)]="item.checked" />
+        <label for="list-check-{{i}}"> {{ item.text }}</label>
+      </div>
+      <div class="ml-auto">
+        <i class="fa fa-trash trash--color fa-lg"  aria-hidden="true" (click)="removeFromList(item)"></i>
+      </div>
+    </div>
+  </li>
+</ul>
